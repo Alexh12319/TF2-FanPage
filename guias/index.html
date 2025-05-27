@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header class="bg-dark text-light py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+          <img src="../imagenes_tf2/icono/Team_Fortress_2_style_logo.svg.png" alt="Logo TF2" class="icon" height="50">
+            <h1 class="titleTeam">Guias</h5>
+          <img src="../imagenes_tf2/renders/Capture_T_Point.png" class="soldier_thump_up">
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../news/parches.html">parches</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../meet_the_team/index.html">equipo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../caracteristicas_mercenarios/mercenarios.html">clases</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html">guias</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../comunidad/index.html">comunidad</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary login" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Login
+            </button>
+        </div>
+      </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title borde3" id="offcanvasExampleLabel">Login</h5>
+        <button type="button" class="btn-close login" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <p class="letras">Correo Electronico</p>
+          <input type="email" class="form-control nofonttf2" id="correoElectrónico" placeholder="Correo Electronico">
+          <br>
+          <p class="letras">Contraseña</p>
+          <input type="password" id="contraseña" class="form-control nofonttf2" aria-describedby="passwordHelpBlock" placeholder="Contraseña">
+          <br>
+          <button type="button" class="btn btn-warning sent" onclick="verificarUsuario()">Iniciar sesión</button>
+          <p id="verificador"></p>
+          <p>Login en proceso...</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1 class="title_trailer">Tutoriales</h1>
+    <br>
+    <h2>En este apartado verás guias y consejos por gente que lleva años en este juego!</h2>
+    <br>
+    <h4>(La imagen te redirije a cada canal)</h4>
+    <br>
+<div class="trailer_container">
+  <h1>hiper:<a href="https://www.youtube.com/@Hiperman" target="_blank"><img src="../imagenes_tf2/renders/Hiper-youtube.png" class="imagen_canal" ></h1></a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Om0GsanK4aw?si=DmlUEZ9_hNeQMx64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3WTnaSHO8UU?si=iciVGwEq4Oy5eY2T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tf_cD4JTaoc?si=ntrPaW1W-5HY1s3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mowP3Ivwnio?si=H_KnwpsRxs3SFaMp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  </div>
+  <br>
+  <div class="trailer_container">
+<h1>Cousingamers:<a href="https://www.youtube.com/@CousinGamers/videos" target="_blank"><img src="../imagenes_tf2/renders/cousingamers.png" class="imagen_canal"></h1></a> 
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/e7Ha0_OwDso?si=CVKF2yTLUUHyo2y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1MH2ncudWCE?si=Vf80xf36gNQe6Dja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CtbQQPYn0OY?si=zgox2XqF3v6jyOzd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q4wMzNm7XvY?si=_91bYyv-Noyh1MTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  </div>
+<h1>Guías sueltas</h1>
+<div class="trailer_container">
+  <h1>Rinatus:<a href="https://www.youtube.com/@rinatus1" target="_blank"><img src="../imagenes_tf2/canales/rinatus.png" class="imagen_canal RN"></h1></a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/8I0yZov-ov8?si=60bRaWGO4Llr0sMC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe></iframe>
+  <iframe></iframe>
+</div>
+<br>
+<div class="trailer_container">
+  <h1>Pot:<a href="https://www.youtube.com/@JustPot" target="_blank"><img src="../imagenes_tf2/canales/channels4_profile.jpg" class="imagen_canal"></h1></a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OPboN25Zb_Q?si=-ihVZ9iRrBDA3cUl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe></iframe>
+  <iframe></iframe>
+</div>
+<br>
+<div class="trailer_container">
+  <h1>Espongado:<a href="https://www.youtube.com/@Espongado" target="_blank"><img src="../imagenes_tf2/canales/Espongado_profile.jpg" class="imagen_canal"></h1></a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/wBd9Zp2EMX4?si=r1tCm-fd22p3wlzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mkFBdRBz_t4?si=7DzRdwVBXQKfXb1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/EFbAt-W19BM?si=qdMbhgdt7jrIiUSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RgrzAR5MjUQ?si=ZVUGWOmsH5EbeIRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Videos"></iframe>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
